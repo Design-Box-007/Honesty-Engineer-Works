@@ -8,15 +8,13 @@ export default defineConfig({
     outDir: "dist"
   }
 });
-
 // import { defineConfig } from 'vite';
 // import react from '@vitejs/plugin-react';
 
 // export default defineConfig({
 //   plugins: [react()],
-//   base: "/", // Set base path
+//   base: "/HonestyEngineeringWorks/", // Set base path
 //   build: {
 //     outDir: "dist"
 //   }
 // });
-

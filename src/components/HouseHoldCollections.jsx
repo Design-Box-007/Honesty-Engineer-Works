@@ -1,34 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import furnitureData from '../data/furnitureData'; // Adjust the path as needed
+import furnitureDataLatest from '../data/furnitureData2';
 
 const HouseHoldCollections = () => {
   const [activeCategory, setActiveCategory] = useState('Tables');
   const [activeSubCategory, setActiveSubCategory] = useState(1);
 
   // Extract categories from the data
-  const categories = furnitureData?.map(category => category.title);
+  const categories = furnitureDataLatest?.map(category => category.title);
 
   // Find the data for the active category
-  const activeCategoryData = furnitureData.find(cat => cat.title === activeCategory);
-  const subCategories = activeCategoryData ? activeCategoryData.items.subCategories : [];
-  const items = activeCategoryData && activeCategoryData.items.items ? activeCategoryData.items.items[activeSubCategory] : [];
+  const activeCategoryData = furnitureDataLatest.find(cat => cat.title === activeCategory);
+  // const subCategories = activeCategoryData ? activeCategoryData.items.subCategories : [];
+  const items = activeCategoryData && activeCategoryData.items
 
-  // Update activeSubCategory when activeCategory changes
-  useEffect(() => {
-    if (subCategories.length > 0) {
-      setActiveSubCategory(subCategories[0].id);
-    }
-  }, [activeCategory, subCategories]);
+  // // Update activeSubCategory when activeCategory changes
+  // useEffect(() => {
+  //   if (subCategories.length > 0) {
+  //     setActiveSubCategory(subCategories[0].id);
+  //   }
+  // }, [activeCategory, subCategories]);
 
   // Handle category click
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
   };
 
-  // Handle subcategory click
-  const handleSubCategoryClick = (subCategory) => {
-    setActiveSubCategory(subCategory);
-  };
+  // // Handle subcategory click
+  // const handleSubCategoryClick = (subCategory) => {
+  //   setActiveSubCategory(subCategory);
+  // };
 
   return (
     <div className='my-5'>
@@ -48,7 +48,7 @@ const HouseHoldCollections = () => {
           ))}
         </div>
       </div>
-      <div className='row'>
+      {/* <div className='row'>
         {subCategories?.map(subCategory => (
           <div key={subCategory.id} className='col-lg-3 col-md-4 col-6 my-3'>
             <div
@@ -64,10 +64,10 @@ const HouseHoldCollections = () => {
               {/* <div className='furniture-category-title'>
                 {subCategory.title}
               </div> */}
-            </div>
+            {/* </div>
           </div>
         ))}
-      </div>
+      </div> */} 
       <div className='row'>
         {items?.map(item => (
           <div key={item.id} className='col-lg-3 col-md-4 col-6 my-3'>
