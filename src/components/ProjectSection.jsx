@@ -82,7 +82,12 @@ const ProjectSection = () => {
               Years of Unparalleled Expertise
             </div>
             <div className='project-description'>
-              HONESTY stands at the forefront of the structural and mega-structured steel industry. Since our inception, we have been dedicated to delivering top-tier steel solutions that blend innovation, precision, and reliability
+              With 32 years of exceptional experience, Honesty Engineering Works has become a trusted name in the industry. We specialize in high-quality structural steel fabrication and custom furniture solutions, serving a diverse range of clients across various sectors. Over the years, we have built lasting relationships with our clients, who value our commitment to precision, durability, and innovation. <br /><br />
+
+              Our team of skilled professionals works with the latest technology and techniques to deliver top-notch results on every project. At Honesty Engineering Works, we are dedicated to meeting the unique needs of each client, ensuring complete satisfaction from start to finish. <br /><br />
+
+              We take pride in our reputation for reliability, attention to detail, and on-time delivery. Our extensive experience, combined with our dedication to quality, has allowed us to grow and serve a vast range of clients, big and small. Whether you need structural steel fabrication or custom furniture, you can count on us to provide solutions that meet your expectations and exceed them. <br /><br />
+
             </div>
           </div>
         </div>
@@ -91,21 +96,21 @@ const ProjectSection = () => {
         </div>
         <div className='row d-flex justify-content-between align-items-center'>
           <div className='col-md-4 col-lg-2 my-2'>
-          <img src={ProjectIconOne} alt="ProjectIconOne" width="200px" />
+            <img src={ProjectIconOne} alt="ProjectIconOne" width="200px" />
           </div>
           <div className='col-md-4 col-lg-2 my-2'>
-          <img src={ProjectIconTwo} alt="ProjectIconTwo" width="130px" />
+            <img src={ProjectIconTwo} alt="ProjectIconTwo" width="130px" />
+          </div>
+          {/* <div className='col-md-4 col-lg-2 my-2'>
+            <img src={ProjectIconThree} alt="ProjectIconThree" width="170px" />
+          </div> */}
+          <div className='col-md-4 col-lg-2 my-2'>
+            <img src={ProjectIconFour} alt="ProjectIconFour" width="170px" />
           </div>
           <div className='col-md-4 col-lg-2 my-2'>
-          <img src={ProjectIconThree} alt="ProjectIconThree" width="170px" />
+            <img src={ProjectIconFive} alt="ProjectIconFive" width="130px" />
           </div>
-          <div className='col-md-4 col-lg-2 my-2'>
-          <img src={ProjectIconFour} alt="ProjectIconFour" width="170px" />
-          </div>
-          <div className='col-md-4 col-lg-2 my-2'>
-          <img src={ProjectIconFive} alt="ProjectIconFive" width="130px" />
-          </div>
-          </div>
+        </div>
       </div>
     </div>
   )

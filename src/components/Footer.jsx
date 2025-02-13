@@ -43,14 +43,14 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-bottom'>
-                <p className='footer-text'>Terms & Services</p>
+                <p className='footer-text'>Address: 4, karukkalacherry road, karaikal. 609602</p>
                 <div className='divider'>
                     <span className='dot'></span>
                     <span className='line'></span>
                     <span className='dot'></span>
                 </div>
-                <p className='footer-text'>Conditions</p>
-                <p className='footer-text'>Privacy Policy</p>
+                <a className='footer-text' href="mailto:vimalbcet@gmail.com"><p>Vimalbcet@gmail.com</p></a>
+                <a className="footer-text" href="tel:+919600858598"><p>+91 9600858598</p></a>
             </div>
         </div>
     );

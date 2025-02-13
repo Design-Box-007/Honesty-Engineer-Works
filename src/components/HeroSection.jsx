@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImage from '../assets/HeroImage.png';
+import HeroImage from '../assets/HomeHeroImage2.jpg';
 import { FaPlayCircle } from 'react-icons/fa';
 import { animate, motion } from 'framer-motion';
 
@@ -31,7 +31,7 @@ const HeroSection = () => {
                                     className='hero-title'>Expert Structural Steel Fabrication & Custom Furniture Solutions – Built for Durability and Designed for Excellence</h1>
                             </motion.div>
                         </div>
-                        <div className='col-md-5 ' style={{ overflow: "hidden" }}>
+                        {/* <div className='col-md-5 ' style={{ overflow: "hidden" }}>
                             <motion.div initial="hidden"
                                 animate="visible"
                                 exit="hidden"
@@ -45,7 +45,8 @@ const HeroSection = () => {
                                     <div className='hero-subtitle'>Creating resilient steel frameworks that stand the test of time. Specializing in innovative, durable, and custom steel solutions for every scale</div>
                                 </div>
                             </motion.div>
-                        </div><div className='col-md-12 '>
+                        </div> */}
+                        {/* <div className='col-md-12 '>
                             <motion.div
                              initial={{opacity:0}}
                                 animate={{opacity:1}}
@@ -70,7 +71,7 @@ const HeroSection = () => {
                                     </div>
                                 </div>
                             </motion.div>
-                        </div>
+                        </div> */}
 
                     </div>
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import AboutUsImageOne from '../assets/AboutUsImageOne.png';
-import AboutUsImageTwo from '../assets/AboutUsImageTwo.png';
+import AboutUsImageOne from '../assets/AboutUsHeroImage1.jpg';
+import AboutUsImageTwo from '../assets/AboutUsHeroImage2.jpg';
 import { motion } from 'framer-motion';
 
 

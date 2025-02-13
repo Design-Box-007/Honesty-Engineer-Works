@@ -6,7 +6,7 @@
 
 :root {
   --background-color: #2D2D2D;
-  --black-lite-color:#444444;
+  --black-lite-color: #444444;
   --transparent-background-color: rgb(255, 255, 255, 0.2);
   --primary-color: #CD9F69;
   --white-color: #FFFFFF;
@@ -27,7 +27,7 @@ body {
   color: var(--white-color);
 }
 
-.section-title{
+.section-title {
   font-weight: 300;
   font-size: 18 px;
 }
@@ -118,6 +118,8 @@ body {
 
 .footer-text {
   font-size: 12px;
+  color: white;
+  text-decoration: none;
 }
 
 .footer-links {
@@ -134,7 +136,7 @@ body {
   gap: 50px;
 }
 
-.footer-link{
+.footer-link {
   text-decoration: none;
   color: var(--white-color);
   cursor: pointer;
@@ -157,14 +159,14 @@ body {
 }
 
 
-.line-gray{
+.line-gray {
   flex: 1;
   border-top: 2px solid var(--transparent-background-color);
   /* Color and style of the line */
   position: relative;
 }
 
-.line-gold{
+.line-gold {
   flex: 1;
   border-top: 1px solid var(--primary-color);
   /* Color and style of the line */
@@ -188,6 +190,7 @@ body {
   transform: rotate(45deg);
   /* Rotate to make the shape a diamond */
 }
+
 .dot {
   width: 0;
   height: 0;
@@ -231,7 +234,8 @@ body {
   width: 100%;
   min-height: 600px;
   border-radius: 10px;
-  overflow: hidden; /* Ensures no overflow */
+  overflow: hidden;
+  /* Ensures no overflow */
 }
 
 
@@ -251,7 +255,8 @@ body {
   top: 25%;
   bottom: 10px;
   display: flex;
-  flex-direction: column; /* Arrange children vertically */
+  flex-direction: column;
+  /* Arrange children vertically */
   overflow: hidden;
 }
 
@@ -259,7 +264,8 @@ body {
   font-size: 45px;
   font-weight: 300;
   margin-bottom: 20px;
-  z-index: 1; /* Ensure it appears above other content */
+  z-index: 1;
+  /* Ensure it appears above other content */
 }
 
 .hero-subtitle-container {
@@ -267,7 +273,8 @@ body {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
-  z-index: 1; /* Ensure it appears above other content */
+  z-index: 1;
+  /* Ensure it appears above other content */
 }
 
 .hero-subtitle {
@@ -277,14 +284,16 @@ body {
 }
 
 .hero-subimage-container {
-  flex: 1; /* Take up the remaining space */
+  flex: 1;
+  /* Take up the remaining space */
   border: 2px solid var(--white-color);
   border-radius: 10px;
   overflow: hidden;
-  position: relative; /* Ensure positioning of child elements */
+  position: relative;
+  /* Ensure positioning of child elements */
 }
 
-.hero-bottom-container{
+.hero-bottom-container {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -298,17 +307,17 @@ body {
   max-height: 300px;
 }
 
-.hero-text{
+.hero-text {
   font-size: 15px;
   font-weight: 600;
 }
 
-.hero-subtext{
+.hero-subtext {
   font-size: 10px;
   font-weight: 200;
 }
 
-.hero-icon{
+.hero-icon {
   color: var(--primary-color);
 }
 
@@ -333,27 +342,27 @@ body {
 
 /* Aboutus Section */
 
-.aboutus-section{
+.aboutus-section {
   margin: 80px 0;
 }
 
-.aboutus-description{
+.aboutus-description {
   font-size: 18px;
   font-weight: 300;
 }
 
 
-.aboutus-description-two{
+.aboutus-description-two {
   font-size: 36px;
   font-weight: 500;
 }
 
-.aboutus-title{
+.aboutus-title {
   font-size: 28px;
   font-weight: 600;
 }
 
-.aboutus-card{
+.aboutus-card {
   background: var(--black-lite-color);
   min-height: 100px;
   border-radius: 10px;
@@ -361,35 +370,37 @@ body {
   margin-bottom: 20px;
 }
 
-.aboutus-card-number{
+.aboutus-card-number {
   font-size: 20px;
   color: var(--primary-color);
   font-weight: 500;
 }
-.aboutus-card-title{
+
+.aboutus-card-title {
   font-size: 20px;
   color: var(--white-color);
   font-weight: 600;
 }
 
-.aboutus-card-description{
+.aboutus-card-description {
   font-size: 15px;
   color: var(--white-color);
   font-weight: 400;
 }
 
 @media (max-width:767px) {
-  .aboutus-image-one{
+  .aboutus-image-one {
     display: none;
   }
-  .aboutus-description-two{
+
+  .aboutus-description-two {
     font-size: 24px;
   }
 }
 
 /* Expertise Section */
 
-.expertise-section{
+.expertise-section {
   margin: 80px 0;
   background: var(--primary-color);
   min-height: 200px;
@@ -397,17 +408,17 @@ body {
   padding: 10px;
 }
 
-.expertise-title{
+.expertise-title {
   font-size: 28px;
   font-weight: 600;
 }
 
-.expertise-subtitle{
+.expertise-subtitle {
   font-size: 20px;
   font-weight: 600;
 }
 
-.expertise-text{
+.expertise-text {
   font-size: 20px;
   font-weight: 400;
 }
@@ -420,58 +431,68 @@ body {
 }
 
 .expertise-scroll-container {
-  display: flex; 
+  display: flex;
 }
 
 .expertise-image-container {
   position: relative;
-  flex: 0 0 auto; /* Prevents the container from shrinking */
-  width: 100%; /* You can adjust the width as needed */
-  max-width: 500px; /* Maximum width for each image container */
-  margin-right: 10px; /* Space between images */
+  flex: 0 0 auto;
+  /* Prevents the container from shrinking */
+  width: 100%;
+  /* You can adjust the width as needed */
+  max-width: 500px;
+  /* Maximum width for each image container */
+  margin-right: 10px;
+  /* Space between images */
 }
 
 .expertise-image {
   width: 100%;
-  height: 100%; /* Maintain aspect ratio */
-  display: block; /* Remove extra space below image */
+  height: 100%;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Remove extra space below image */
 }
 
 /* Optional: Add styles for smooth scrolling on touch devices */
 .expertise-gallery::-webkit-scrollbar {
-  height: 8px; /* Scrollbar height */
+  height: 8px;
+  /* Scrollbar height */
 }
 
 .expertise-gallery::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Scrollbar thumb color */
+  background-color: transparent;
+  /* Scrollbar thumb color */
   border-radius: 4px;
 }
 
 .expertise-gallery::-webkit-scrollbar-thumb:hover {
-  background-color: transparent; /* Scrollbar thumb hover color */
+  background-color: transparent;
+  /* Scrollbar thumb hover color */
 }
 
 /* Furniture Section */
 
-.furniture-section{
+.furniture-section {
   margin: 80px 0;
 }
 
-.furniture-title, .project-title{
+.furniture-title,
+.project-title {
   font-size: 28px;
   font-weight: 600;
 }
 
-.furniture-image-container{
+.furniture-image-container {
   position: relative;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
-.furniture-image-text{
+.furniture-image-text {
   font-size: 24px;
   font-weight: 400;
-  position:absolute;
+  position: absolute;
   bottom: 10px;
   right: 10px;
   left: 10px;
@@ -479,12 +500,13 @@ body {
 
 
 @media (max-width:767px) {
-  
-  .furniture-image-text{
+
+  .furniture-image-text {
     font-size: 16px;
   }
 
-  .furniture-title ,.project-title{
+  .furniture-title,
+  .project-title {
     font-size: 18px;
   }
 }
@@ -492,17 +514,17 @@ body {
 
 /* Project Section  */
 
-.project-section{
+.project-section {
   margin: 80px 0;
 }
 
-.project-image-container{
+.project-image-container {
   position: relative;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
-.project-bottom-container{
+.project-bottom-container {
   margin: 80px 0;
   min-height: 200px;
   border: 1px solid var(--white-color);
@@ -510,12 +532,12 @@ body {
   padding: 30px;
 }
 
-.project-subtitle{
+.project-subtitle {
   font-size: 42px;
   font-weight: 400;
 }
 
-.project-description{
+.project-description {
   font-size: 22px;
   font-weight: 200;
   text-align: justify;
@@ -523,18 +545,19 @@ body {
 
 /* Testimonial Section  */
 
-.testimonial-section{
+.testimonial-section {
   margin: 80px 0;
 }
 
-.testimonial-title, .contact-title{
+.testimonial-title,
+.contact-title {
   font-size: 42px;
   font-weight: 600;
   text-align: end;
   width: 50%;
 }
 
-.testimonial-card{
+.testimonial-card {
   background: var(--white-color);
   border-radius: 10px;
   padding: 20px;
@@ -543,19 +566,19 @@ body {
 }
 
 
-.testimonial-username{
+.testimonial-username {
   color: var(--background-color);
   font-weight: 500;
   font-size: 28px;
 }
 
-.testimonial-userinfo{
+.testimonial-userinfo {
   color: var(--primary-color);
   font-size: 18px;
   font-weight: 500;
 }
 
-.testimonial-userreview{
+.testimonial-userreview {
   margin-top: 10px;
   font-size: 16px;
   font-weight: 300;
@@ -565,7 +588,9 @@ body {
 
 
 @media (max-width:767px) {
-  .testimonial-title, .contact-title{
+
+  .testimonial-title,
+  .contact-title {
     font-size: 20px;
   }
 }
@@ -573,11 +598,11 @@ body {
 
 /* Contact Section  */
 
-.contact-section{
+.contact-section {
   margin: 80px 0;
 }
 
-.contact-container{
+.contact-container {
   border: 1px solid var(--white-color);
   border-radius: 10px;
   min-height: 200px;
@@ -585,42 +610,42 @@ body {
   padding: 20px;
 }
 
-.contact-subtitle{
-  font-size:34px;
+.contact-subtitle {
+  font-size: 34px;
   font-weight: 200;
 }
 
-.contact-description{
+.contact-description {
   font-weight: 300;
   font-size: 14px;
 }
 
-.contact-label{
+.contact-label {
   font-size: 14px;
   font-weight: 400;
 }
 
-.contact-input{
+.contact-input {
   border: 1px solid var(--transparent-background-color);
   background-color: var(--transparent-background-color);
   border-radius: 6px;
   padding: 8px;
 }
 
-.contact-image-container{
+.contact-image-container {
   object-fit: cover;
   height: 100%;
   max-height: 480px;
   border-radius: 10px;
 }
 
-.contact-image{
+.contact-image {
   object-fit: cover;
   height: 100%;
   border-radius: 10px;
 }
 
-.button-secondary{
+.button-secondary {
   border: none;
   border-radius: 6px;
   padding: 10px 20px;
@@ -641,95 +666,98 @@ body {
   width: 50%;
   top: 10px;
   right: 10px;
-  
+
 }
 
-.services-title{
+.services-title {
   font-size: 54px;
   font-weight: 600;
 }
 
-.services-subtitle{
+.services-subtitle {
   font-size: 40px;
 }
-.services-description{
+
+.services-description {
   font-size: 20px;
   font-weight: 400;
   margin: 20px 0;
 }
 
-.services-container-one{
+.services-container-one {
   background: var(--primary-color);
   padding: 20px;
-  border-radius: 10px; 
-  margin: 50px 0; 
-}
-
-.services-container-two{
-  background: var(--black-lite-color);
-  padding: 20px;
-  border-radius: 10px; 
+  border-radius: 10px;
   margin: 50px 0;
 }
 
-.services-images-container{
+.services-container-two {
+  background: var(--black-lite-color);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 50px 0;
+}
+
+.services-images-container {
   object-fit: cover;
   height: 100%;
   border-radius: 10px;
 }
 
-.services-image{
+.services-image {
   object-fit: cover;
   height: 100%;
   border-radius: 10px;
 }
 
-.services-subdescription{
+.services-subdescription {
   font-size: 21px;
   font-weight: 500;
 }
 
-.services-card-primary{
+.services-card-primary {
   background: var(--primary-color);
   padding: 20px;
-  border-radius: 10px; 
-  margin: 20px 0; 
-   height: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.services-card-secondary{
+.services-card-secondary {
   background: var(--black-lite-color);
   padding: 20px;
   border: 1px solid var(--white-color);
-  border-radius: 10px; 
-  margin: 20px 0; 
-  height: 100%; 
+  border-radius: 10px;
+  margin: 20px 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.service-card-title{
+.service-card-title {
   font-size: 18px;
   font-weight: 700;
 }
 
-.service-card-description{
+.service-card-description {
   font-size: 18px;
   font-weight: 500;
 }
+
 @media (max-width:767px) {
-  .servicehero-right-container{
+  .servicehero-right-container {
     width: 75%;
   }
-  .services-title{
-  font-size: 28px;
+
+  .services-title {
+    font-size: 28px;
   }
 
-  .services-subtitle{
+  .services-subtitle {
     font-size: 24px;
   }
 }
@@ -737,46 +765,46 @@ body {
 
 /* Furniture Page section  */
 
-.furniturepage-section{
+.furniturepage-section {
   margin: 80px 0;
 }
 
-.furniturepage-hero-section{
+.furniturepage-hero-section {
   margin-top: 100px;
 }
 
-.furniturepage-title{
+.furniturepage-title {
   font-size: 42px;
   font-weight: 600;
   margin-top: 80px;
 }
 
-.furniturepage-heroimage-container{
+.furniturepage-heroimage-container {
   position: relative;
   object-fit: cover;
   height: 100%;
   border-radius: 10px;
 }
 
-.furniturepage-heroimage{
+.furniturepage-heroimage {
   object-fit: cover;
   height: 100%;
   min-height: 200px;
   border-radius: 10px;
 }
 
-.furniturepage-connect-container{
+.furniturepage-connect-container {
   background: var(--primary-color);
   padding: 20px;
   border-radius: 10px;
 }
 
-.furniturepage-connect-title{
+.furniturepage-connect-title {
   font-size: 46px;
   font-weight: 500;
 }
 
-.furniturepage-connect-button{
+.furniturepage-connect-button {
   background: var(--white-color);
   height: 100%;
   padding: 20px;
@@ -789,23 +817,25 @@ body {
 
 }
 
-.furniturepage-subtitle{
+.furniturepage-subtitle {
   font-size: 44px;
   font-weight: 600;
   text-align: center;
 }
 
-.furniturepage-category{
+.furniturepage-category {
   margin: 20px 0px;
 }
 
-.furniturepage-category-item{
+.furniturepage-category-item {
   border-radius: 10px;
   font-size: 14px;
   width: auto;
+  cursor: pointer;
   padding: 8px 10px;
 }
-.active{
+
+.active {
   border: 1px solid var(--primary-color);
 }
 
@@ -816,63 +846,80 @@ body {
   border-radius: 10px;
   min-height: 150px;
   max-height: 150px;
-  overflow: hidden; /* Ensure the content doesn't overflow the border-radius */
+  overflow: hidden;
+  /* Ensure the content doesn't overflow the border-radius */
 }
 
 .furniture-category-image {
   object-fit: cover;
   height: 100%;
-  width: 100%; /* Ensure the image fills the container */
+  width: 100%;
+  /* Ensure the image fills the container */
   border-radius: 10px;
 }
 
 .furniture-category-title {
   position: absolute;
   bottom: 10px;
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Offset the horizontal center */
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  left: 50%;
+  /* Center horizontally */
+  transform: translateX(-50%);
+  /* Offset the horizontal center */
+  background: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent white background */
   backdrop-filter: blur(3px);
   padding: 10px;
   border: 1px solid var(--white-color);
   border-radius: 10px;
-  width: calc(100% - 20px); /* Ensure the title container is full width minus padding/margin */
+  width: calc(100% - 20px);
+  /* Ensure the title container is full width minus padding/margin */
   font-size: 16px;
-  box-sizing: border-box; /* Ensure padding and border are included in width */
+  box-sizing: border-box;
+  /* Ensure padding and border are included in width */
 }
 
 
-.furniture-item-image-container{
+.furniture-item-image-container {
   position: relative;
   height: 100%;
   border-radius: 10px;
   min-height: 250px;
   max-height: 250px;
-  overflow: hidden; /* Ensure the content doesn't overflow the border-radius */
+  overflow: hidden;
+  /* Ensure the content doesn't overflow the border-radius */
 }
-.furniture-item-title{
+
+.furniture-item-title {
   position: absolute;
   bottom: 10px;
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Offset the horizontal center */
+  left: 50%;
+  /* Center horizontally */
+  transform: translateX(-50%);
+  /* Offset the horizontal center */
   padding: 5px;
   border-bottom: 1px solid var(--white-color);
   border-radius: 10px;
-  width: calc(100% - 20px); /* Ensure the title container is full width minus padding/margin */
+  width: calc(100% - 20px);
+  /* Ensure the title container is full width minus padding/margin */
   font-size: 12px;
-  box-sizing: border-box; /* Ensure padding and border are included in width */
+  box-sizing: border-box;
+  /* Ensure padding and border are included in width */
 }
 
 @media (max-width:767px) {
-  .furniturepage-connect-title{
+  .furniturepage-connect-title {
     font-size: 28px;
   }
-  .furniturepage-title ,.furniturepage-subtitle{
+
+  .furniturepage-title,
+  .furniturepage-subtitle {
     font-size: 22px;
   }
-  .furniturepage-category-item{
+
+  .furniturepage-category-item {
     font-size: 10px;
   }
+
   /* .furniture-category-title{
     font-size: 8px;
   margin: 1px;
