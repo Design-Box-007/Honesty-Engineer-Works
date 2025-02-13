@@ -1,6 +1,0 @@
-{
-    "rewrites": [
-      { "source": "/HonestyEngineeringWorks/(.*)", "destination": "/index.html" }
-    ]
-  }
-  
