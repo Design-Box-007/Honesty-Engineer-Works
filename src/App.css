@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --background-color: #2D2D2D;
+  --black-lite-color:#444444;
+  --transparent-background-color: rgb(255, 255, 255, 0.2);
+  --primary-color: #CD9F69;
+  --white-color: #FFFFFF;
+}
+
+body {
+  background: var(--background-color);
+  overflow-x: hidden;
+  height: 100vh;
+  color: var(--white-color);
+}
+
+.global-style {
+  background: var(--background-color);
+  overflow-x: hidden;
+  height: 100vh;
+  padding: 20px;
+  color: var(--white-color);
+}
+
+.section-title{
+  font-weight: 300;
+  font-size: 18 px;
+}
+
+.button-primary {
+  background: var(--white-color);
+  color: var(--background-color);
+  font-weight: 600;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Header Section */
+.header {
+  position: relative;
+  z-index: 1000;
+  /* Ensure it's on top of other elements */
+}
+
+.logo-title {
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 12px;
+}
+
+.header-toggle {
+  background-color: var(--white-color) !important;
+  border-radius: 20px !important;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  /* Pushes the logo to the right */
+}
+
+.navbar-brand {
+  padding-left: 20px;
+  margin-right: auto;
+  /* Moves the logo to the right end */
+}
+
+.nav-links {
+  background: var(--transparent-background-color);
+  padding: 8px, 20px, 8px, 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  margin-right: 20px;
+  border: 1px solid var(--transparent-background-color);
+}
+
+
+.navbar-nav .nav-link {
+  color: var(--white-color) !important;
+  /* Change link color */
+  margin: 0 10px;
+  padding: 10px;
+  /* Adjust the gap between links */
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    border-radius: 20px;
+    max-width: 230px;
+  }
+}
+
+
+/* Footer Section */
+
+.footer-container {
+  margin: 20px 0px;
+  background: var(--primary-color);
+  min-height: 100px;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.footer-text {
+  font-size: 12px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-bottom {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer-link{
+  text-decoration: none;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.divider {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.line {
+  flex: 1;
+  border-top: 1px solid var(--white-color);
+  /* Color and style of the line */
+  position: relative;
+}
+
+
+.line-gray{
+  flex: 1;
+  border-top: 2px solid var(--transparent-background-color);
+  /* Color and style of the line */
+  position: relative;
+}
+
+.line-gold{
+  flex: 1;
+  border-top: 1px solid var(--primary-color);
+  /* Color and style of the line */
+  position: relative;
+}
+
+
+.dot-gold {
+  width: 0;
+  height: 0;
+  border-bottom: 2px solid var(--primary-color);
+  /* Left side of the diamond */
+  border-top: 2px solid var(--primary-color);
+  /* Right side of the diamond */
+  border-right: 2px solid var(--primary-color);
+  /* Top side of the diamond (upper triangle) */
+  border-left: 2px solid var(--primary-color);
+  /* Bottom side of the diamond (lower triangle) */
+  display: inline-block;
+  position: relative;
+  transform: rotate(45deg);
+  /* Rotate to make the shape a diamond */
+}
+.dot {
+  width: 0;
+  height: 0;
+  border-bottom: 2px solid var(--white-color);
+  /* Left side of the diamond */
+  border-top: 2px solid var(--white-color);
+  /* Right side of the diamond */
+  border-right: 2px solid var(--white-color);
+  /* Top side of the diamond (upper triangle) */
+  border-left: 2px solid var(--white-color);
+  /* Bottom side of the diamond (lower triangle) */
+  display: inline-block;
+  position: relative;
+  transform: rotate(45deg);
+  /* Rotate to make the shape a diamond */
+}
+
+
+/* Ensure dots are centered on the line */
+
+
+@media (max-width: 767px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+  }
+
+  .footer-bottom {
+    margin: 10px 0;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+}
+
+
+/* Hero Section  */
+.hero-container {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  border-radius: 10px;
+  overflow: hidden; /* Ensures no overflow */
+}
+
+
+.hero-image {
+  position: absolute;
+  border-radius: 10px;
+  object-fit: cover;
+  opacity: 0.6;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-subcontainer {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 25%;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  overflow: hidden;
+}
+
+.hero-title {
+  font-size: 45px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  z-index: 1; /* Ensure it appears above other content */
+}
+
+.hero-subtitle-container {
+  background: var(--white-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  z-index: 1; /* Ensure it appears above other content */
+}
+
+.hero-subtitle {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--background-color);
+}
+
+.hero-subimage-container {
+  flex: 1; /* Take up the remaining space */
+  border: 2px solid var(--white-color);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative; /* Ensure positioning of child elements */
+}
+
+.hero-bottom-container{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+}
+
+.hero-subimage {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  max-height: 300px;
+}
+
+.hero-text{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.hero-subtext{
+  font-size: 10px;
+  font-weight: 200;
+}
+
+.hero-icon{
+  color: var(--primary-color);
+}
+
+
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-subcontainer {
+    top: 15%;
+  }
+}
+
+@media (min-width:767px) and (max-width: 1370px) {
+  .hero-subimage {
+    max-height: 200px;
+  }
+}
+
+
+
+/* Aboutus Section */
+
+.aboutus-section{
+  margin: 80px 0;
+}
+
+.aboutus-description{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+.aboutus-description-two{
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.aboutus-title{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.aboutus-card{
+  background: var(--black-lite-color);
+  min-height: 100px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.aboutus-card-number{
+  font-size: 20px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.aboutus-card-title{
+  font-size: 20px;
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.aboutus-card-description{
+  font-size: 15px;
+  color: var(--white-color);
+  font-weight: 400;
+}
+
+@media (max-width:767px) {
+  .aboutus-image-one{
+    display: none;
+  }
+  .aboutus-description-two{
+    font-size: 24px;
+  }
+}
+
+/* Expertise Section */
+
+.expertise-section{
+  margin: 80px 0;
+  background: var(--primary-color);
+  min-height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.expertise-title{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.expertise-subtitle{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.expertise-text{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* styles.css */
+
+.expertise-gallery {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.expertise-scroll-container {
+  display: flex; 
+}
+
+.expertise-image-container {
+  position: relative;
+  flex: 0 0 auto; /* Prevents the container from shrinking */
+  width: 100%; /* You can adjust the width as needed */
+  max-width: 500px; /* Maximum width for each image container */
+  margin-right: 10px; /* Space between images */
+}
+
+.expertise-image {
+  width: 100%;
+  height: 100%; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below image */
+}
+
+/* Optional: Add styles for smooth scrolling on touch devices */
+.expertise-gallery::-webkit-scrollbar {
+  height: 8px; /* Scrollbar height */
+}
+
+.expertise-gallery::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Scrollbar thumb color */
+  border-radius: 4px;
+}
+
+.expertise-gallery::-webkit-scrollbar-thumb:hover {
+  background-color: transparent; /* Scrollbar thumb hover color */
+}
+
+/* Furniture Section */
+
+.furniture-section{
+  margin: 80px 0;
+}
+
+.furniture-title, .project-title{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.furniture-image-container{
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.furniture-image-text{
+  font-size: 24px;
+  font-weight: 400;
+  position:absolute;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+}
+
+
+@media (max-width:767px) {
+  
+  .furniture-image-text{
+    font-size: 16px;
+  }
+
+  .furniture-title ,.project-title{
+    font-size: 18px;
+  }
+}
+
+
+/* Project Section  */
+
+.project-section{
+  margin: 80px 0;
+}
+
+.project-image-container{
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.project-bottom-container{
+  margin: 80px 0;
+  min-height: 200px;
+  border: 1px solid var(--white-color);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.project-subtitle{
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.project-description{
+  font-size: 22px;
+  font-weight: 200;
+  text-align: justify;
+}
+
+/* Testimonial Section  */
+
+.testimonial-section{
+  margin: 80px 0;
+}
+
+.testimonial-title, .contact-title{
+  font-size: 42px;
+  font-weight: 600;
+  text-align: end;
+  width: 50%;
+}
+
+.testimonial-card{
+  background: var(--white-color);
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 200px;
+  margin-bottom: 20px;
+}
+
+
+.testimonial-username{
+  color: var(--background-color);
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.testimonial-userinfo{
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.testimonial-userreview{
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--black-lite-color);
+}
+
+
+@media (max-width:767px) {
+  .testimonial-title, .contact-title{
+    font-size: 20px;
+  }
+}
+
+
+/* Contact Section  */
+
+.contact-section{
+  margin: 80px 0;
+}
+
+.contact-container{
+  border: 1px solid var(--white-color);
+  border-radius: 10px;
+  min-height: 200px;
+  background: var(--black-lite-color);
+  padding: 20px;
+}
+
+.contact-subtitle{
+  font-size:34px;
+  font-weight: 200;
+}
+
+.contact-description{
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.contact-label{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact-input{
+  border: 1px solid var(--transparent-background-color);
+  background-color: var(--transparent-background-color);
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.contact-image-container{
+  object-fit: cover;
+  height: 100%;
+  max-height: 480px;
+  border-radius: 10px;
+}
+
+.contact-image{
+  object-fit: cover;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.button-secondary{
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+/* Services  */
+
+/* Services Hero Section  */
+
+.servicehero-right-container {
+  position: absolute;
+  width: 50%;
+  top: 10px;
+  right: 10px;
+  
+}
+
+.services-title{
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.services-subtitle{
+  font-size: 40px;
+}
+.services-description{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.services-container-one{
+  background: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px; 
+  margin: 50px 0; 
+}
+
+.services-container-two{
+  background: var(--black-lite-color);
+  padding: 20px;
+  border-radius: 10px; 
+  margin: 50px 0;
+}
+
+.services-images-container{
+  object-fit: cover;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.services-image{
+  object-fit: cover;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.services-subdescription{
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.services-card-primary{
+  background: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px; 
+  margin: 20px 0; 
+   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.services-card-secondary{
+  background: var(--black-lite-color);
+  padding: 20px;
+  border: 1px solid var(--white-color);
+  border-radius: 10px; 
+  margin: 20px 0; 
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card-title{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.service-card-description{
+  font-size: 18px;
+  font-weight: 500;
+}
+@media (max-width:767px) {
+  .servicehero-right-container{
+    width: 75%;
+  }
+  .services-title{
+  font-size: 28px;
+  }
+
+  .services-subtitle{
+    font-size: 24px;
+  }
+}
+
+
+/* Furniture Page section  */
+
+.furniturepage-section{
+  margin: 80px 0;
+}
+
+.furniturepage-hero-section{
+  margin-top: 100px;
+}
+
+.furniturepage-title{
+  font-size: 42px;
+  font-weight: 600;
+  margin-top: 80px;
+}
+
+.furniturepage-heroimage-container{
+  position: relative;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.furniturepage-heroimage{
+  object-fit: cover;
+  height: 100%;
+  min-height: 200px;
+  border-radius: 10px;
+}
+
+.furniturepage-connect-container{
+  background: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.furniturepage-connect-title{
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.furniturepage-connect-button{
+  background: var(--white-color);
+  height: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  color: #CD9F69;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+}
+
+.furniturepage-subtitle{
+  font-size: 44px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.furniturepage-category{
+  margin: 20px 0px;
+}
+
+.furniturepage-category-item{
+  border-radius: 10px;
+  font-size: 14px;
+  width: auto;
+  padding: 8px 10px;
+}
+.active{
+  border: 1px solid var(--primary-color);
+}
+
+
+.furniture-category-image-container {
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  min-height: 150px;
+  max-height: 150px;
+  overflow: hidden; /* Ensure the content doesn't overflow the border-radius */
+}
+
+.furniture-category-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%; /* Ensure the image fills the container */
+  border-radius: 10px;
+}
+
+.furniture-category-title {
+  position: absolute;
+  bottom: 10px;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset the horizontal center */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  backdrop-filter: blur(3px);
+  padding: 10px;
+  border: 1px solid var(--white-color);
+  border-radius: 10px;
+  width: calc(100% - 20px); /* Ensure the title container is full width minus padding/margin */
+  font-size: 16px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+
+.furniture-item-image-container{
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  min-height: 250px;
+  max-height: 250px;
+  overflow: hidden; /* Ensure the content doesn't overflow the border-radius */
+}
+.furniture-item-title{
+  position: absolute;
+  bottom: 10px;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset the horizontal center */
+  padding: 5px;
+  border-bottom: 1px solid var(--white-color);
+  border-radius: 10px;
+  width: calc(100% - 20px); /* Ensure the title container is full width minus padding/margin */
+  font-size: 12px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+@media (max-width:767px) {
+  .furniturepage-connect-title{
+    font-size: 28px;
+  }
+  .furniturepage-title ,.furniturepage-subtitle{
+    font-size: 22px;
+  }
+  .furniturepage-category-item{
+    font-size: 10px;
+  }
+  /* .furniture-category-title{
+    font-size: 8px;
+  margin: 1px;
+    padding: 0px;
+  } */
+}
