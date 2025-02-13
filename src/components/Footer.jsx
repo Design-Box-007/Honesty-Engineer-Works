@@ -15,7 +15,7 @@ const Footer = () => {
             <div className='row d-flex align-items-center justify-between'>
                 <div className='col-md-3 p-3'>
                     <h1 className='logo-title'>Honesty</h1>
-                    <p className='footer-text'>All Copyrights claimed @ 2023</p>
+                    <p className='footer-text'>All Copyrights claimed @ {new Date().getFullYear()}</p>
                 </div>
                 {/* <div className='col-md-6 p-3'>
                     <div className='footer-links'>

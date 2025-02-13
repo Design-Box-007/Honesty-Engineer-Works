@@ -59,11 +59,20 @@ body {
   margin-top: 12px;
 }
 
-@media screen and (0 < widht <=500px) {
+@media screen and (0 < width <=452px) {
+  .logo-title {
+    font-size: 12px;
+  }
+}
+
+@media screen and (452px < width <=500px) {
   .logo-title {
     font-size: 16px;
   }
 }
+
+
+
 
 .header-toggle {
   background-color: var(--white-color) !important;
@@ -345,6 +354,7 @@ body {
 
   .hero-subcontainer {
     top: 15%;
+    justify-content: center;
   }
 }
 
