@@ -59,6 +59,12 @@ body {
   margin-top: 12px;
 }
 
+@media screen and (0 < widht <=500px) {
+  .logo-title {
+    font-size: 16px;
+  }
+}
+
 .header-toggle {
   background-color: var(--white-color) !important;
   border-radius: 20px !important;
