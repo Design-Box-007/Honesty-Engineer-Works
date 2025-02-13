@@ -261,10 +261,11 @@ body {
   overflow: hidden;
 }
 
-.justify-center{
+.justify-center {
   justify-content: center;
 }
-.justify-between{
+
+.justify-between {
   justify-content: space-between;
 }
 
@@ -500,7 +501,7 @@ body {
   margin-bottom: 20px;
 }
 
-.furniture-image-container img{
+.furniture-image-container img {
   width: 100%;
   height: 315px;
   object-fit: cover;
@@ -560,16 +561,16 @@ body {
   text-align: justify;
 }
 
-@media screen and (0 <= width <= 1024px) {
+@media screen and (0 <=width <=1024px) {
   .project-subtitle {
     font-size: 32px;
     font-weight: 400;
   }
-  
+
   .project-description {
     font-size: 16px;
     font-weight: 200;
-    text-align:center;
+    text-align: left;
   }
 }
 
