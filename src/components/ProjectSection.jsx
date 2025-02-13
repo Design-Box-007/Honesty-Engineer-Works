@@ -14,7 +14,7 @@ import ProjectIconFive from '../assets/ProjectIconFive.svg';
 const ProjectSection = () => {
   return (
     <div className='project-section'>
-      <div className='mb-4'>
+      {/* <div className='mb-4'>
         <div className='section-title'>(04)</div>
         <div className='section-title'>Our Project</div>
       </div>
@@ -70,7 +70,7 @@ const ProjectSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className='project-bottom-container'>
         <div className='row d-flex justify-content-around mt-5 mb-3'>
           <div className='col-md-3 mb-4'>

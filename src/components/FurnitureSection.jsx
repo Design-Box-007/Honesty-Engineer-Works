@@ -4,7 +4,7 @@ import Storage2 from "../assets/furniture-assets/Storage cupboards/Storage2.jpg"
 import Chair5 from "../assets/furniture-assets/Chairs/Chair5.jpg";
 import Table4 from "../assets/furniture-assets/Table/1563.jpg";
 import Chair3 from "../assets/furniture-assets/Chairs/Chair3.jpg";
-import Shed10 from "../assets/furniture-assets/Sheds & roofs/Shed10.jpg";
+import Shed10 from "../assets/ShedImage.jpg";
 import FurnitureImageThree from '../assets/FurnitureImageThree.png';
 
 
@@ -15,7 +15,7 @@ const furnitureData = [
   { src: FurnitureImageThree, alt: 'FurnitureImageThree', text: 'Lounges', textColor: "white" },
   { src: Chair3, alt: 'FurnitureImageFour', text: 'Furniture', textColor: "black" },
   { src: Table4, alt: 'FurnitureImageFive', text: 'Tables', textColor: "black" },
-  { src: Shed10, alt: 'FurnitureImageSix', text: 'Industry', textColor: "black" },
+  { src: Shed10, alt: 'FurnitureImageSix', text: 'Industry', textColor: "white" },
 ];
 
 

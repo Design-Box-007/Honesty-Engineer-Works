@@ -12,12 +12,12 @@ const Footer = () => {
 
     return (
         <div className='footer-container'>
-            <div className='row d-flex align-items-center'>
+            <div className='row d-flex align-items-center justify-between'>
                 <div className='col-md-3 p-3'>
                     <h1 className='logo-title'>Honesty</h1>
                     <p className='footer-text'>All Copyrights claimed @ 2023</p>
                 </div>
-                <div className='col-md-6 p-3'>
+                {/* <div className='col-md-6 p-3'>
                     <div className='footer-links'>
                         <Link className='footer-link' to="/" onClick={scrollToTop}>
                             <div>Home</div>
@@ -32,7 +32,7 @@ const Footer = () => {
                             <div>Connect</div>
                         </Link>
                     </div>
-                </div>
+                </div> */}
                 <div className='col-md-3 p-3'>
                     <img
                         src={FooterImage}

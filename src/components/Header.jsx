@@ -20,7 +20,7 @@ const Header = () => {
             alt="Logo"
             className="d-inline-block align-top"
           />
-          <h1 className='logo-title'>Honesty</h1>
+          <h1 className='logo-title'>Honesty Engineering Works</h1>
         </Navbar.Brand>
       <Navbar.Toggle  className='me-4 header-toggle' aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className='p-3' id="basic-navbar-nav">

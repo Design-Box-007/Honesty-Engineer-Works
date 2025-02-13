@@ -260,10 +260,18 @@ body {
   overflow: hidden;
 }
 
+.justify-center{
+  justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+
 .hero-title {
   font-size: 45px;
   font-weight: 300;
   margin-bottom: 20px;
+  text-align: center;
   z-index: 1;
   /* Ensure it appears above other content */
 }
@@ -451,6 +459,8 @@ body {
   height: 100%;
   /* Maintain aspect ratio */
   display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
   /* Remove extra space below image */
 }
 

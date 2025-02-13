@@ -20,7 +20,7 @@ const HeroSection = () => {
                     className='hero-image'
                 />
                 <div className='hero-subcontainer'>
-                    <div className='row d-flex align-items-center'>
+                    <div className='row d-flex align-items-center justify-center'>
                         <div className='col-md-7'>
                             <motion.div initial="hidden"
                                 animate="visible"
