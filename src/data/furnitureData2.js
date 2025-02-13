@@ -65,7 +65,6 @@ import Storage9 from "../assets/furniture-assets/Storage cupboards/Storage9.jpg"
 
 import Table1 from "../assets/furniture-assets/Table/12820878.jpg";
 import Table2 from "../assets/furniture-assets/Table/1390.jpg";
-import Table3 from "../assets/furniture-assets/Table/1563 (1).jpg";
 import Table4 from "../assets/furniture-assets/Table/1563.jpg";
 import Table5 from "../assets/furniture-assets/Table/1627.jpg";
 import Table6 from "../assets/furniture-assets/Table/36.jpg";
@@ -85,7 +84,6 @@ const furnitureDataLatest = [
         items: [
             { id: 1, image: Table1, title: "Table 1" },
             { id: 2, image: Table2, title: "Table 2" },
-            { id: 3, image: Table3, title: "Table 3" },
             { id: 4, image: Table4, title: "Table 4" },
             { id: 5, image: Table5, title: "Table 5" },
             { id: 6, image: Table6, title: "Table 6" },
