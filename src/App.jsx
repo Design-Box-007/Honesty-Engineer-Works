@@ -11,18 +11,18 @@ import Furniture from './pages/Furniture';
 function App() {
 
   return (
-     <div className='global-style'>
-      <HashRouter>
-      <Header/>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/services' element={<Services/>} />
-        <Route path='/furniture' element={<Furniture/>} />
-        <Route path='/contact' element={<ContactSection/>} />
-      </Routes>
-      <Footer/>
+    <div className='global-style'>
+      <HashRouter basename="/">
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/furniture' element={<Furniture />} />
+          <Route path='/contact' element={<ContactSection />} />
+        </Routes>
+        <Footer />
       </HashRouter>
-      </div>
+    </div>
   )
 }
 
