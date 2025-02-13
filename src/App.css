@@ -559,6 +559,19 @@ body {
   text-align: justify;
 }
 
+@media screen and (0 <= width <= 1024px) {
+  .project-subtitle {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    font-weight: 200;
+    text-align: justify;
+  }
+}
+
 /* Testimonial Section  */
 
 .testimonial-section {
