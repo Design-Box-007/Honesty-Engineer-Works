@@ -3,7 +3,7 @@ import { LuArrowRightCircle } from 'react-icons/lu'
 import ProjectImageOne from '../assets/ProjectImageOne.png';
 import ProjectImageTwo from '../assets/ProjectImageTwo.png';
 import ProjectImageThree from '../assets/ProjectImageThree.png';
-import ProjectImage32 from '../assets/ProjectImage32.png';
+import ProjectImage39 from '../assets/ProjectImage39.png';
 import ProjectIconOne from '../assets/ProjectIconOne.svg';
 import ProjectIconTwo from '../assets/ProjectIconTwo.svg';
 import ProjectIconThree from '../assets/ProjectIconThree.svg';
@@ -74,7 +74,7 @@ const ProjectSection = () => {
       <div className='project-bottom-container'>
         <div className='row d-flex justify-content-around mt-5 mb-3'>
           <div className='col-md-3 mb-4'>
-            <img src={ProjectImage32} alt="ProjectImage32" width="100%" />
+            <img src={ProjectImage39} alt="ProjectImage32" width="100%" />
 
           </div>
           <div className='col-md-8'>
@@ -82,7 +82,7 @@ const ProjectSection = () => {
               Years of Unparalleled Expertise
             </div>
             <div className='project-description'>
-              With 32 years of exceptional experience, Honesty Engineering Works has become a trusted name in the industry. We specialize in high-quality structural steel fabrication and custom furniture solutions, serving a diverse range of clients across various sectors. Over the years, we have built lasting relationships with our clients, who value our commitment to precision, durability, and innovation. <br /><br />
+              With 39 years of exceptional experience, Honesty Engineering Works has become a trusted name in the industry. We specialize in high-quality structural steel fabrication and custom furniture solutions, serving a diverse range of clients across various sectors. Over the years, we have built lasting relationships with our clients, who value our commitment to precision, durability, and innovation. <br /><br />
 
               Our team of skilled professionals works with the latest technology and techniques to deliver top-notch results on every project. At Honesty Engineering Works, we are dedicated to meeting the unique needs of each client, ensuring complete satisfaction from start to finish. <br /><br />
 

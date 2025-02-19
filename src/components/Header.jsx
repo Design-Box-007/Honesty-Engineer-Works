@@ -13,7 +13,7 @@ const Header = () => {
     });
 }
   return (
-    <Navbar bg="transparent" expand="lg" fixed='top' className="header ">
+    <Navbar bg="transparent" expand="lg" className="header">
           <Navbar.Brand as={Link} to='/' className="d-flex gap-2 align-items-center">
           <img
             src={logo}

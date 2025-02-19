@@ -51,6 +51,17 @@ body {
   /* Ensure it's on top of other elements */
 }
 
+
+@media screen and (991px < width) {
+  .header {
+    position: fixed!important;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+
 .logo-title {
   color: var(--white-color);
   font-size: 20px;
