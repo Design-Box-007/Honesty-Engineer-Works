@@ -27,6 +27,7 @@ const Header = () => {
     
         <Nav className="mr-auto nav-links">
           <Nav.Link onClick={handleChange} as={Link} to="/">Home</Nav.Link>
+          <Nav.Link onClick={handleChange} as={Link} to="/about">About</Nav.Link>
           <Nav.Link onClick={handleChange} as={Link} to="/services">Services</Nav.Link>
           <Nav.Link onClick={handleChange} as={Link} to="/furniture">Furniture</Nav.Link>
           <Nav.Link onClick={handleChange} as={Link} to="/contact">Contact Us</Nav.Link>

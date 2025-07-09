@@ -390,7 +390,7 @@ body {
 
 
 .aboutus-description-two {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 500;
 }
 
@@ -425,13 +425,15 @@ body {
   font-weight: 400;
 }
 
-@media (max-width:767px) {
-  .aboutus-image-one {
-    display: none;
-  }
-
+@media (max-width:425px) {
   .aboutus-description-two {
-    font-size: 24px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width:767px) {
+  .aboutus-description-two {
+    font-size: 20px;
   }
 }
 
@@ -983,4 +985,15 @@ body {
   margin: 1px;
     padding: 0px;
   } */
+}
+
+
+.founder-signature{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.founder-name{
+  font-size: 16px;
+  font-weight: 600;
 }
